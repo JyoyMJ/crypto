@@ -1,0 +1,109 @@
+body{
+    display: grid;
+    background-color: #0c0c0c;
+    color: aliceblue;
+    letter-spacing:0.1;
+    padding: 0px;
+    margin: 0px;
+    grid-template-areas: "head" "side" "main" "foot";
+    
+}
+
+.head{
+grid-area: head;
+background-color: #0a0909;
+padding: 5px;
+
+}
+
+.headdiv{
+    display: flex;
+    gap:10px;
+}
+
+.logo{
+    border-radius:50%;
+    margin:15px;
+}
+
+.wallets{
+    text-align: center;
+}
+
+
+.nav{
+    grid-area:nav;
+}
+.navul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(127, 127, 129);
+}
+
+a:hover{
+    color: white;
+}
+
+.side{
+    grid-area:side;
+    padding:10px;
+    font-size: large;
+}
+main{
+    grid-area:main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.add{
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    width:100%;
+
+}
+
+
+
+.btcp,.ethp,.xmrp{
+    background-color: #111010;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: left;
+    
+}
+
+footer{
+    grid-area:foot;
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(127, 127, 129);
+}
+@media (min-width:768px){
+    body{       
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "head head" "side main" "foot foot";
+       
+    }
+     
+}   
