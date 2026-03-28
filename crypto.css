@@ -1,3 +1,7 @@
+*{
+    scrollbar-width: none;
+}
+
 body{
     display: grid;
     background-color: #0c0c0c;
@@ -6,6 +10,7 @@ body{
     padding: 0px;
     margin: 0px;
     grid-template-areas: "head" "side" "main" "foot";
+    
     
 }
 
@@ -75,7 +80,8 @@ main{
     border-radius: 5px;
     color: white;
     font-size: 18px;
-    width:100%;
+    width:320px ;
+    
 
 }
 
@@ -89,7 +95,9 @@ main{
     font-size: 18px;
     line-height: 40px;
     text-align: left;
-    
+    width:320px;
+    overflow:auto  ;
+
 }
 
 footer{
